@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
 
     <nav
-      className={`sm:px-16 px-2 w-full flex items-center py-5 fixed top-0 z-20 bg-[#050816]`}
+      className={`sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 bg-[#050816]`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
