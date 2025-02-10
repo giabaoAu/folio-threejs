@@ -13,12 +13,12 @@ const Navbar = () => {
   return (
 
     <nav
-      className={`sm:px-6 w-full flex items-center py-5 fixed top-0 z-20 bg-[#050816]`}
+      className={`sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 bg-[#050816]`}
     >
-      <div className='w-full flex justify-between items-center max-w-6xl h-15'>
+      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           to="/"
-          className='flex ml-4 items-center gap-2'
+          className='flex items-center gap-2'
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
@@ -36,10 +36,10 @@ const Navbar = () => {
               className={`${active === link.title
                 ? "text-white"
                 : "text-[#aaa6c3]"
-                } hover:text-white mr-4 text-[18px] font-medium cursor-pointer`}
+                } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <a className='mr-8' href={`#${link.id}`}>{link.title}</a>
+              <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
         </ul>
